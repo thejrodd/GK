@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gamma Kappa Chapter · Kappa Alpha Psi Fraternity, Inc.</title>
+  <meta name="description" content="Gamma Kappa Chapter of Kappa Alpha Psi Fraternity, Inc. — Achievement in Every Field of Human Endeavor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition" id="pageTransition" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="#home" class="navbar-logo" aria-label="Gamma Kappa Chapter home">
+        <div class="logo-diamond" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="20,2 38,20 20,38 2,20" fill="#8B0000" stroke="#C8963E" stroke-width="1.5"/>
+            <polygon points="20,8 32,20 20,32 8,20" fill="none" stroke="#C8963E" stroke-width="1"/>
+            <text x="20" y="24" text-anchor="middle" font-family="serif" font-size="11" font-weight="700" fill="#FDF5E6">ΚΑΨ</text>
+          </svg>
+        </div>
+        <span class="logo-text">Gamma Kappa</span>
+      </a>
+
+      <nav class="navbar-links" role="navigation" aria-label="Primary navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#chapter" class="nav-link">Chapter</a>
+        <a href="#brothers" class="nav-link">Brothers</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+      <nav>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#chapter" class="mobile-nav-link">Chapter</a>
+        <a href="#brothers" class="mobile-nav-link">Brothers</a>
+        <a href="#events" class="mobile-nav-link">Events</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-label="Hero section">
+      <canvas class="diamond-canvas" id="diamondCanvas" aria-hidden="true"></canvas>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge reveal-fade" aria-label="Founding year">
+          <span class="badge-line" aria-hidden="true"></span>
+          Est. 1911
+          <span class="badge-line" aria-hidden="true"></span>
+        </div>
+
+        <h1 class="hero-title reveal-up" aria-label="Gamma Kappa Chapter, Kappa Alpha Psi Fraternity Incorporated">
+          <span class="title-line">Gamma Kappa</span>
+          <span class="title-line title-accent">Chapter</span>
+          <span class="title-line title-sub">Kappa Alpha Psi Fraternity, Inc.</span>
+        </h1>
+
+        <p class="hero-motto reveal-up reveal-delay-1">
+          "Achievement in Every Field of Human Endeavor"
+        </p>
+
+        <div class="hero-actions reveal-up reveal-delay-2">
+          <a href="#about" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+            Our Story
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Get Involved
+          </a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="scroll-dot"></span>
+      </a>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         ABOUT
+    ════════════════════════════════════════ -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Our Foundation</p>
+          <h2 class="section-title" id="about-heading">A Legacy of <em>Brotherhood</em></h2>
+          <p class="section-desc">
+            Founded January 5, 1911 at Indiana University, Kappa Alpha Psi Fraternity, Inc. stands as one of America's most distinguished Greek-letter organizations — built on achievement, service, and brotherhood.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal-left">
+            <h3>The Gamma Kappa Chapter</h3>
+            <p>
+              The Gamma Kappa Chapter carries the torch of Kappa Alpha Psi's storied legacy with distinction. Our brothers represent the highest ideals of scholarship, leadership, and civic responsibility — forging bonds that last a lifetime.
+            </p>
+            <p>
+              We are united not by chance but by choice — drawn together by a commitment to excellence and an unwavering dedication to our communities, our families, and one another.
+            </p>
+            <div class="about-crest" aria-label="Chapter crest decoration" aria-hidden="true">
+              <svg viewBox="0 0 120 140" width="120" height="140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="60,6 114,40 114,100 60,134 6,100 6,40" fill="#8B0000" stroke="#C8963E" stroke-width="2"/>
+                <polygon points="60,18 100,46 100,94 60,122 20,94 20,46" fill="none" stroke="#C8963E" stroke-width="1" opacity="0.5"/>
+                <text x="60" y="58" text-anchor="middle" font-family="serif" font-size="22" font-weight="700" fill="#C8963E">ΚΑΨ</text>
+                <text x="60" y="82" text-anchor="middle" font-family="serif" font-size="9" fill="#FDF5E6" letter-spacing="2">KAPPA ALPHA PSI</text>
+                <text x="60" y="100" text-anchor="middle" font-family="serif" font-size="8" fill="#FDF5E6" letter-spacing="1">GAMMA KAPPA</text>
+                <line x1="30" y1="70" x2="50" y2="70" stroke="#C8963E" stroke-width="0.5"/>
+                <line x1="70" y1="70" x2="90" y2="70" stroke="#C8963E" stroke-width="0.5"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="stats-grid reveal-right">
+            <div class="stat-card">
+              <span class="stat-num" data-target="1911" data-display="year">1911</span>
+              <span class="stat-label">Year Founded</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="700" data-suffix="+">700+</span>
+              <span class="stat-label">Chapters Worldwide</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="113" data-suffix="+">113+</span>
+              <span class="stat-label">Years of Excellence</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="160000" data-suffix="+">160K+</span>
+              <span class="stat-label">Members Initiated</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CHAPTER PILLARS
+    ════════════════════════════════════════ -->
+    <section class="chapter section section-dark" id="chapter" aria-labelledby="chapter-heading">
+      <div class="container">
+
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow section-eyebrow--light">Our Identity</p>
+          <h2 class="section-title section-title--light" id="chapter-heading">The Four <em>Pillars</em></h2>
+          <p class="section-desc section-desc--light">
+            Every brother of the Gamma Kappa Chapter embodies these foundational principles — passed down through generations of Kappas.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar-card reveal-up" style="--delay: 0ms">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="pillar-diamond" aria-hidden="true"></div>
+            <h3 class="pillar-title">Scholarship</h3>
+            <p class="pillar-desc">Academic excellence is the cornerstone of our brotherhood. We hold each other to the highest intellectual standards.</p>
+          </article>
+
+          <article class="pillar-card reveal-up" style="--delay: 100ms">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="pillar-diamond" aria-hidden="true"></div>
+            <h3 class="pillar-title">Brotherhood</h3>
+            <p class="pillar-desc">The bond between Kappas is unbreakable — forged through shared sacrifice, trust, and a lifelong commitment to one another.</p>
+          </article>
+
+          <article class="pillar-card reveal-up" style="--delay: 200ms">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="pillar-diamond" aria-hidden="true"></div>
+            <h3 class="pillar-title">Community</h3>
+            <p class="pillar-desc">Service to our communities is not optional — it is who we are. We uplift, mentor, and invest wherever we go.</p>
+          </article>
+
+          <article class="pillar-card reveal-up" style="--delay: 300ms">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="pillar-diamond" aria-hidden="true"></div>
+            <h3 class="pillar-title">Leadership</h3>
+            <p class="pillar-desc">Kappas lead with integrity and vision. We develop men who shape industries, communities, and generations.</p>
+          </article>
+        </div>
+
+        <div class="crimson-cream-bar reveal-up" aria-label="Chapter colors: Crimson and Cream">
+          <div class="color-swatch" style="background:#8B0000">
+            <span>Crimson</span>
+          </div>
+          <div class="color-divider" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="32" height="32" fill="none"><polygon points="20,2 38,20 20,38 2,20" fill="#C8963E"/></svg>
+          </div>
+          <div class="color-swatch" style="background:#FDF5E6; color:#0D0D0D">
+            <span>Cream</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         BROTHERS / LEADERSHIP
+    ════════════════════════════════════════ -->
+    <section class="brothers section" id="brothers" aria-labelledby="brothers-heading">
+      <div class="container">
+
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Leadership</p>
+          <h2 class="section-title" id="brothers-heading">Chapter <em>Officers</em></h2>
+          <p class="section-desc">Meet the brothers who lead the Gamma Kappa Chapter with distinction and dedication.</p>
+        </div>
+
+        <div class="brothers-grid">
+          <!-- Brother cards — replace names/roles with actual chapter officers -->
+          <article class="brother-card reveal-up" style="--delay: 0ms">
+            <div class="brother-avatar" aria-hidden="true">
+              <svg viewBox="0 0 80 80" width="80" height="80"><polygon points="40,4 76,40 40,76 4,40" fill="#8B0000" stroke="#C8963E" stroke-width="1.5"/><text x="40" y="46" text-anchor="middle" font-size="22" font-family="serif" fill="#FDF5E6">Κ</text></svg>
+            </div>
+            <h3 class="brother-name">Polemarch</h3>
+            <p class="brother-role">Chapter President</p>
+            <p class="brother-line">Line Name · Season Year</p>
+          </article>
+
+          <article class="brother-card reveal-up" style="--delay: 80ms">
+            <div class="brother-avatar" aria-hidden="true">
+              <svg viewBox="0 0 80 80" width="80" height="80"><polygon points="40,4 76,40 40,76 4,40" fill="#8B0000" stroke="#C8963E" stroke-width="1.5"/><text x="40" y="46" text-anchor="middle" font-size="22" font-family="serif" fill="#FDF5E6">Α</text></svg>
+            </div>
+            <h3 class="brother-name">Vice Polemarch</h3>
+            <p class="brother-role">Chapter Vice President</p>
+            <p class="brother-line">Line Name · Season Year</p>
+          </article>
+
+          <article class="brother-card reveal-up" style="--delay: 160ms">
+            <div class="brother-avatar" aria-hidden="true">
+              <svg viewBox="0 0 80 80" width="80" height="80"><polygon points="40,4 76,40 40,76 4,40" fill="#8B0000" stroke="#C8963E" stroke-width="1.5"/><text x="40" y="46" text-anchor="middle" font-size="22" font-family="serif" fill="#FDF5E6">Ψ</text></svg>
+            </div>
+            <h3 class="brother-name">Keeper of Records</h3>
+            <p class="brother-role">Chapter Secretary</p>
+            <p class="brother-line">Line Name · Season Year</p>
+          </article>
+
+          <article class="brother-card reveal-up" style="--delay: 240ms">
+            <div class="brother-avatar" aria-hidden="true">
+              <svg viewBox="0 0 80 80" width="80" height="80"><polygon points="40,4 76,40 40,76 4,40" fill="#8B0000" stroke="#C8963E" stroke-width="1.5"/><text x="40" y="46" text-anchor="middle" font-size="22" font-family="serif" fill="#FDF5E6">Κ</text></svg>
+            </div>
+            <h3 class="brother-name">Exchequer</h3>
+            <p class="brother-role">Chapter Treasurer</p>
+            <p class="brother-line">Line Name · Season Year</p>
+          </article>
+
+          <article class="brother-card reveal-up" style="--delay: 320ms">
+            <div class="brother-avatar" aria-hidden="true">
+              <svg viewBox="0 0 80 80" width="80" height="80"><polygon points="40,4 76,40 40,76 4,40" fill="#8B0000" stroke="#C8963E" stroke-width="1.5"/><text x="40" y="46" text-anchor="middle" font-size="22" font-family="serif" fill="#FDF5E6">Α</text></svg>
+            </div>
+            <h3 class="brother-name">Strategus</h3>
+            <p class="brother-role">Chapter Sergeant-at-Arms</p>
+            <p class="brother-line">Line Name · Season Year</p>
+          </article>
+
+          <article class="brother-card reveal-up" style="--delay: 400ms">
+            <div class="brother-avatar" aria-hidden="true">
+              <svg viewBox="0 0 80 80" width="80" height="80"><polygon points="40,4 76,40 40,76 4,40" fill="#8B0000" stroke="#C8963E" stroke-width="1.5"/><text x="40" y="46" text-anchor="middle" font-size="22" font-family="serif" fill="#FDF5E6">Ψ</text></svg>
+            </div>
+            <h3 class="brother-name">Historian</h3>
+            <p class="brother-role">Chapter Historian</p>
+            <p class="brother-line">Line Name · Season Year</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         EVENTS
+    ════════════════════════════════════════ -->
+    <section class="events section section-tinted" id="events" aria-labelledby="events-heading">
+      <div class="container">
+
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Calendar</p>
+          <h2 class="section-title" id="events-heading">Upcoming <em>Events</em></h2>
+          <p class="section-desc">Stay connected with the Gamma Kappa Chapter through our community events, formals, and service initiatives.</p>
+        </div>
+
+        <div class="events-list">
+          <article class="event-card reveal-left">
+            <div class="event-date" aria-label="Date: July 19th">
+              <span class="event-month">JUL</span>
+              <span class="event-day">19</span>
+            </div>
+            <div class="event-info">
+              <div class="event-header">
+                <h3 class="event-title">Annual Achievement Banquet</h3>
+                <span class="event-badge event-badge--open">Open</span>
+              </div>
+              <p class="event-meta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                6:00 PM — Grand Ballroom
+              </p>
+              <p class="event-desc">Join us for our annual celebration of academic and professional achievement among our brothers and community partners.</p>
+            </div>
+          </article>
+
+          <article class="event-card reveal-left" style="--delay: 100ms">
+            <div class="event-date" aria-label="Date: August 3rd">
+              <span class="event-month">AUG</span>
+              <span class="event-day">3</span>
+            </div>
+            <div class="event-info">
+              <div class="event-header">
+                <h3 class="event-title">Community Service Day</h3>
+                <span class="event-badge event-badge--open">Open</span>
+              </div>
+              <p class="event-meta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                9:00 AM — City Community Center
+              </p>
+              <p class="event-desc">A day of giving back. All brothers and community volunteers are invited to join us in serving those who need it most.</p>
+            </div>
+          </article>
+
+          <article class="event-card reveal-left" style="--delay: 200ms">
+            <div class="event-date" aria-label="Date: September 14th">
+              <span class="event-month">SEP</span>
+              <span class="event-day">14</span>
+            </div>
+            <div class="event-info">
+              <div class="event-header">
+                <h3 class="event-title">Crimson & Cream Formal</h3>
+                <span class="event-badge event-badge--members">Members</span>
+              </div>
+              <p class="event-meta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                7:00 PM — Chapter Venue
+              </p>
+              <p class="event-desc">Our signature annual formal — an evening of elegance, brotherhood, and celebration of all we've accomplished together.</p>
+            </div>
+          </article>
+
+          <article class="event-card reveal-left" style="--delay: 300ms">
+            <div class="event-date" aria-label="Date: October 28th">
+              <span class="event-month">OCT</span>
+              <span class="event-day">28</span>
+            </div>
+            <div class="event-info">
+              <div class="event-header">
+                <h3 class="event-title">Founder's Day Celebration</h3>
+                <span class="event-badge event-badge--formal">Formal</span>
+              </div>
+              <p class="event-meta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                5:00 PM — TBD
+              </p>
+              <p class="event-desc">Honoring the Ten Founders of Kappa Alpha Psi and the legacy they built — a solemn and joyous occasion for all brothers.</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONTACT
+    ════════════════════════════════════════ -->
+    <section class="contact section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title" id="contact-heading">Connect With <em>Us</em></h2>
+          <p class="section-desc">Interested in Kappa Alpha Psi? Have a partnership inquiry? We'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-form-wrap reveal-left">
+            <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Marcus" required autocomplete="given-name" />
+                </div>
+                <div class="form-group">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Johnson" required autocomplete="family-name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <select id="subject" name="subject" class="form-input form-select">
+                  <option value="">Select a topic…</option>
+                  <option value="interest">Interest in Membership</option>
+                  <option value="partnership">Community Partnership</option>
+                  <option value="event">Event Inquiry</option>
+                  <option value="media">Media / Press</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us about yourself or your inquiry…" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+              <div class="form-success" id="formSuccess" role="alert" aria-live="polite" hidden>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Message sent! A brother will be in touch soon.
+              </div>
+              <div class="form-error" id="formError" role="alert" aria-live="polite" hidden>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Please fill in all required fields.
+              </div>
+            </form>
+          </div>
+
+          <aside class="contact-info reveal-right" aria-label="Chapter contact information">
+            <div class="info-card">
+              <div class="info-diamond" aria-hidden="true">
+                <svg viewBox="0 0 60 60" width="52" height="52" fill="none"><polygon points="30,3 57,30 30,57 3,30" fill="#8B0000" stroke="#C8963E" stroke-width="1.5"/><text x="30" y="36" text-anchor="middle" font-size="18" font-family="serif" fill="#FDF5E6">ΚΑΨ</text></svg>
+              </div>
+              <h3 class="info-title">Gamma Kappa Chapter</h3>
+              <p class="info-motto">"Achievement in Every Field of Human Endeavor"</p>
+            </div>
+
+            <ul class="info-list">
+              <li class="info-item">
+                <div class="info-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="info-label">Email</span>
+                  <span class="info-value">gammakappa@kappaalphapsi1911.net</span>
+                </div>
+              </li>
+              <li class="info-item">
+                <div class="info-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Chapter City, State</span>
+                </div>
+              </li>
+              <li class="info-item">
+                <div class="info-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <div>
+                  <span class="info-label">Meetings</span>
+                  <span class="info-value">Every 2nd &amp; 4th Sunday</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="social-links" aria-label="Social media links">
+              <a href="#" class="social-btn" aria-label="Follow us on Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Follow us on Twitter / X">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l16 16M4 20L20 4"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Visit our Facebook page">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="28" height="28" fill="none"><polygon points="20,2 38,20 20,38 2,20" fill="#8B0000" stroke="#C8963E" stroke-width="1.5"/><text x="20" y="24" text-anchor="middle" font-family="serif" font-size="10" fill="#FDF5E6">ΚΑΨ</text></svg>
+          </div>
+          <div>
+            <p class="footer-chapter">Gamma Kappa Chapter</p>
+            <p class="footer-org">Kappa Alpha Psi Fraternity, Inc.</p>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#chapter">Chapter</a>
+          <a href="#brothers">Brothers</a>
+          <a href="#events">Events</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <p class="footer-copy">&copy; <span id="footerYear"></span> Gamma Kappa Chapter · Kappa Alpha Psi Fraternity, Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
