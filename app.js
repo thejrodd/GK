@@ -323,6 +323,29 @@ function initAnchorScroll() {
 }
 
 /* ════════════════════════════════════════
+   HERO SLIDESHOW
+════════════════════════════════════════ */
+function initHeroSlideshow() {
+  const slides = $$('.hero-slideshow .slide');
+  if (!slides.length) return;
+
+  let current = 0;
+
+  function advance() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }
+
+  if (pref()) {
+    // Keep first slide static at low opacity, no animation
+    return;
+  }
+
+  setInterval(advance, 5000);
+}
+
+/* ════════════════════════════════════════
    INIT
 ════════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
@@ -331,6 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAllCanvases();
   initScrollReveal();
   initHeroReveal();
+  initHeroSlideshow();
   initContactForm();
   initFooterYear();
   initAnchorScroll();
