@@ -55,15 +55,15 @@
 
   <!-- HERO -->
   <section class="hero" id="home" aria-label="Introduction hero">
-    <canvas class="diamond-canvas" id="heroCanvas" aria-hidden="true"></canvas>
     <div class="hero-slideshow" id="heroSlideshow" aria-hidden="true">
-      <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1600&q=80&auto=format&fit=crop" alt="" class="slide active"/>
-      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=80&auto=format&fit=crop" alt="" class="slide"/>
-      <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1600&q=80&auto=format&fit=crop" alt="" class="slide"/>
-      <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=1600&q=80&auto=format&fit=crop" alt="" class="slide"/>
-      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80&auto=format&fit=crop" alt="" class="slide"/>
+      <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1600&q=80&auto=format&fit=crop')"></div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=80&auto=format&fit=crop')"></div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1600&q=80&auto=format&fit=crop')"></div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=1600&q=80&auto=format&fit=crop')"></div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80&auto=format&fit=crop')"></div>
     </div>
     <div class="hero-overlay" aria-hidden="true"></div>
+    <canvas class="diamond-canvas" id="heroCanvas" aria-hidden="true"></canvas>
     <div class="hero-content">
       <div class="hero-badge reveal-fade">
         <span class="badge-line"></span>Est. 1911<span class="badge-line"></span>
@@ -84,6 +84,13 @@
           Meet the Brothers
         </a>
       </div>
+    </div>
+    <div class="slide-dots" id="slideDots" aria-hidden="true">
+      <button class="slide-dot active" aria-label="Slide 1"></button>
+      <button class="slide-dot" aria-label="Slide 2"></button>
+      <button class="slide-dot" aria-label="Slide 3"></button>
+      <button class="slide-dot" aria-label="Slide 4"></button>
+      <button class="slide-dot" aria-label="Slide 5"></button>
     </div>
     <a href="#welcome" class="scroll-indicator" aria-label="Scroll down"><span class="scroll-dot"></span></a>
   </section>

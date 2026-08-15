@@ -323,26 +323,47 @@ function initAnchorScroll() {
 }
 
 /* ════════════════════════════════════════
-   HERO SLIDESHOW
+   HERO SLIDESHOW — alternating crimson/cream
 ════════════════════════════════════════ */
 function initHeroSlideshow() {
+  const hero   = $('.hero');
+  const overlay = $('.hero-overlay');
   const slides = $$('.hero-slideshow .slide');
+  const dots   = $$('.slide-dot');
   if (!slides.length) return;
 
   let current = 0;
 
-  function advance() {
+  // Odd-indexed slides (0, 2, 4…) → crimson mode; even-indexed (1, 3…) → cream mode
+  function applyMode(index) {
+    const isCream = index % 2 === 1;
+    if (hero) {
+      hero.classList.toggle('cream-mode', isCream);
+      hero.classList.toggle('crimson-mode', !isCream);
+    }
+    if (overlay) {
+      overlay.classList.toggle('cream-mode', isCream);
+    }
+  }
+
+  function goTo(index) {
     slides[current].classList.remove('active');
-    current = (current + 1) % slides.length;
+    dots[current] && dots[current].classList.remove('active');
+    current = index % slides.length;
     slides[current].classList.add('active');
+    dots[current] && dots[current].classList.add('active');
+    applyMode(current);
   }
 
-  if (pref()) {
-    // Keep first slide static at low opacity, no animation
-    return;
-  }
+  // Allow clicking dots to jump to slide
+  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
 
-  setInterval(advance, 5000);
+  // Set initial mode
+  applyMode(0);
+
+  if (pref()) return;
+
+  setInterval(() => goTo(current + 1), 6000);
 }
 
 /* ════════════════════════════════════════
